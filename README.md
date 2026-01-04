@@ -73,37 +73,37 @@ That’s it. No installs. No configs. Zero excuses.
 ## 📸 Screenshots
 
 ### 🏠 Electronics Catalog
-![Electronics Catalog](screenshots/index.png)
+![Electronics Catalog](Screenshots/index.png)
 
 ### 🎓 Online Course Platform
-![Online Course Page](screenshots/Online_course_page.png)
+![Online Course Page](Screenshots/Online_course_page.png)
 
 ### 🏠 Smart Assistant Hub
-![Smart Assistant Hub](screenshots/page2.png)
+![Smart Assistant Hub](Screenshots/page2.png)
 
 ### ⌚ FitTrack Pro Band
-![FitTrack Pro Band](screenshots/page3.png)
+![FitTrack Pro Band](Screenshots/page3.png)
 
 ### 🖱️ Ergonomic Wireless Mouse
-![Ergonomic Wireless Mouse](screenshots/page4.png)
+![Ergonomic Wireless Mouse](Screenshots/page4.png)
 
 ### ⌨️ RGB Mechanical Keyboard
-![RGB Mechanical Keyboard](screenshots/Page6.png)
+![RGB Mechanical Keyboard](Screenshots/Page6.png)
 
 ### ⌚ Series 7 Smart Watch
-![Series 7 Smart Watch](screenshots/page7.png)
+![Series 7 Smart Watch](Screenshots/page7.png)
 
 ### 📷 Instant Film Camera
-![Instant Film Camera](screenshots/page8.png)
+![Instant Film Camera](Screenshots/page8.png)
 
 ### 🎧 Premium Wireless Headphones
-![Premium Wireless Headphones](screenshots/page9.png)
+![Premium Wireless Headphones](Screenshots/page9.png)
 
 ### 💻 UltraSlim Laptop 15"
-![UltraSlim Laptop 15"](screenshots/page10.png)
+![UltraSlim Laptop 15"](Screenshots/page10.png)
 
 ### 🛒 Electronics Catalog (Additional View)
-![Electronics Catalog](screenshots/page11.png)
+![Electronics Catalog](Screenshots/page11.png)
 
 
 
