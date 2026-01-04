@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ShopEase - RGB Mechanical Keyboard Details</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "primary-dark": "#0f4bc0",
+                        "background-light": "#f8f9fc",
+                        "background-dark": "#101622",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2230",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-50 min-h-screen flex flex-col">
+<header class="sticky top-0 z-50 flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-surface-light dark:bg-surface-dark px-6 py-3 shadow-sm">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3 text-slate-900 dark:text-white" href="index.html">
+<div class="flex items-center justify-center size-8 bg-primary rounded-lg text-white">
+<span class="material-symbols-outlined">shopping_bag</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tight">ShopEase</h2>
+</a>
+<label class="hidden md:flex flex-col min-w-[320px]">
+<div class="relative flex w-full items-center rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 focus-within:ring-2 focus-within:ring-primary/50 transition-all">
+<div class="absolute left-3 flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full bg-transparent border-none py-2.5 pl-10 pr-4 text-sm text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:ring-0" placeholder="Search products, brands, and categories..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Account</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Wishlist</a>
+<div class="relative cursor-pointer group">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors flex items-center gap-1" href="#">
+                    Cart
+                    <span class="flex items-center justify-center w-5 h-5 bg-primary text-white text-[10px] rounded-full">2</span>
+</a>
+</div>
+</nav>
+<button class="flex items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-bold transition-all shadow-md shadow-primary/20">
+            Sign In
+        </button>
+</div>
+</header>
+<div class="flex flex-1 w-full max-w-[1440px] mx-auto">
+<aside class="hidden lg:flex w-64 flex-col gap-6 border-r border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-6 shrink-0 h-[calc(100vh-64px)] sticky top-[64px] overflow-y-auto">
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<h1 class="text-slate-900 dark:text-white text-base font-bold">Categories</h1>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Browse by Type</p>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary dark:text-blue-400 font-medium transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px] fill-1">smartphone</span>
+<span class="text-sm">Electronics</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px]">checkroom</span>
+<span class="text-sm">Clothing</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px]">chair</span>
+<span class="text-sm">Home &amp; Garden</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+<span class="text-sm">Books</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px]">smart_display</span>
+<span class="text-sm">Online Courses</span>
+</a>
+</nav>
+</div>
+<hr class="border-slate-200 dark:border-slate-800"/>
+<div class="flex flex-col gap-4">
+<h1 class="text-slate-900 dark:text-white text-base font-bold">Recently Viewed</h1>
+<div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<img alt="Headphones" class="w-12 h-12 object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPzzfohznBqvfNVlHen3RK3bJmUVEmcAc0qNu2wVbCdml6ktSL0aKuM9D_1yqWYIxk0zTRRaF1Sm7vDATYtWGfosWP6y9X4g8rzeOEroF74o04PKkt1BrxqHkLbifVgu55mp2YnBKzW5XTVQUQa_BPp1bYUbIwAhLziKPbhK4pkKXX2sAR0mHa-0rQReqIAv2YsrFqqy_Z7pe80NQGUtg2oS0D0gfHd72YXoKy_AFk-eJTjdByqBedm0NUyb0J5jeBjY2eEGvKtpU"/>
+<div class="flex flex-col">
+<span class="text-xs font-medium text-slate-900 dark:text-white">Wireless Headphones</span>
+<span class="text-xs text-primary">$299.00</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+<img alt="Mouse" class="w-12 h-12 object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9VUVpPlgbXkKkC6wUeY0JyR2pO-mda5Hp-1vOcAtV3zKzo7HqBNEYwUxDQqJQ11ZSFukB1evGcsAGduHBUu177r5gxTKKNEHJVxPeAqgg2198eBf_06Txm_NVy5ZjXR70WMADB0vMyHzeH9c9x6CbgnFfidwLS9HNICcYaTOPnJOSdnLsKwV1-XnXvv0IjhPEvW5QT4suGBoEN7jlIIALV4SWZhFm_uJy-C-p9SZHjMcxpz4qdIkvhTKTD5CL1PqQ1RQAZ-j43kg"/>
+<div class="flex flex-col">
+<span class="text-xs font-medium text-slate-900 dark:text-white">Ergo Mouse</span>
+<span class="text-xs text-primary">$35.00</span>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 flex flex-col min-w-0 p-4 lg:p-8 bg-background-light dark:bg-background-dark overflow-y-auto max-h-[calc(100vh-64px)]">
+<div class="flex items-center gap-2 text-sm mb-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="index.html">Home</a>
+<span class="text-slate-300 dark:text-slate-600">/</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Electronics</a>
+<span class="text-slate-300 dark:text-slate-600">/</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Keyboards</a>
+<span class="text-slate-300 dark:text-slate-600">/</span>
+<span class="text-slate-900 dark:text-white font-medium">RGB Mechanical Keyboard</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+<div class="flex flex-col gap-4">
+<div class="relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+<img alt="Mechanical keyboard with colorful backlighting" class="h-full w-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGza0Ke1t2CKGpGi1bC9-qQqgK6TPNMq17Ek_qumJHiiXpQxOWDTFoZLQfie7tzItY9DEiOuy7XS1frG9GKCVSDNIr-4VVFqRe1AHajNxgtW2PMfG9b2jGZRXK35r1Akwipf72m4EtP1d9ppj8o8vaTFwiV2rPj6d5sIbWoBnOKlTpgBKcaYtBIsPgBtOGOvFd3pnSzDVgx9PuTY_fpgYoTR_utrHlAQQveBp23DhL77utt5-83k0pkU6pYhibkECdmiw4UYdmLpw"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1.5 bg-primary text-white text-xs font-bold uppercase rounded-full tracking-wider shadow-lg">Bestseller</span>
+</div>
+<button class="absolute bottom-4 right-4 p-2.5 rounded-full bg-white dark:bg-surface-dark text-slate-700 dark:text-slate-200 shadow-md hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">zoom_in</span>
+</button>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-primary ring-2 ring-primary/20">
+<img alt="Thumbnail 1" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGza0Ke1t2CKGpGi1bC9-qQqgK6TPNMq17Ek_qumJHiiXpQxOWDTFoZLQfie7tzItY9DEiOuy7XS1frG9GKCVSDNIr-4VVFqRe1AHajNxgtW2PMfG9b2jGZRXK35r1Akwipf72m4EtP1d9ppj8o8vaTFwiV2rPj6d5sIbWoBnOKlTpgBKcaYtBIsPgBtOGOvFd3pnSzDVgx9PuTY_fpgYoTR_utrHlAQQveBp23DhL77utt5-83k0pkU6pYhibkECdmiw4UYdmLpw"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors bg-white dark:bg-slate-900 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400 text-3xl">keyboard</span>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors bg-white dark:bg-slate-900 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400 text-3xl">settings_input_component</span>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors bg-white dark:bg-slate-900 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400 text-3xl">light_mode</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm font-semibold text-primary uppercase tracking-wide">Accessories</span>
+<div class="flex items-center gap-1 bg-yellow-400/10 px-2 py-1 rounded text-yellow-600 dark:text-yellow-400">
+<span class="material-symbols-outlined text-[16px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold">4.7</span>
+<span class="text-xs text-slate-500 dark:text-slate-400 ml-1">(128 reviews)</span>
+</div>
+</div>
+<h1 class="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white leading-tight mb-4">RGB Mechanical Gaming Keyboard</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-6">
+                    Elevate your gaming experience with tactile mechanical switches and fully customizable RGB lighting. Designed for speed, precision, and durability.
+                </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">keyboard_alt</span>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-white">Tactile Switches</p>
+<p class="text-xs text-slate-500">Blue mechanical keys</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">palette</span>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-white">RGB Lighting</p>
+<p class="text-xs text-slate-500">16.8M colors</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">bolt</span>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-white">Anti-Ghosting</p>
+<p class="text-xs text-slate-500">Full N-Key Rollover</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">settings</span>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-white">Customizable</p>
+<p class="text-xs text-slate-500">Programmable macros</p>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-slate-200 dark:bg-slate-800 my-2"></div>
+<div class="flex flex-col gap-6 mt-6">
+<div class="flex items-end gap-3">
+<h2 class="text-4xl font-bold text-slate-900 dark:text-white">$129.00</h2>
+<span class="text-lg text-slate-400 line-through mb-1.5">$159.00</span>
+<span class="text-sm font-bold text-green-600 bg-green-100 px-2 py-0.5 rounded mb-2">Save 20%</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<div class="flex items-center border border-slate-300 dark:border-slate-700 rounded-lg h-12 w-32 bg-white dark:bg-slate-800">
+<button class="w-10 h-full flex items-center justify-center text-slate-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<input class="w-full text-center border-none p-0 bg-transparent text-slate-900 dark:text-white font-medium focus:ring-0 appearance-none" type="number" value="1"/>
+<button class="w-10 h-full flex items-center justify-center text-slate-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="flex-1 h-12 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg shadow-lg shadow-primary/30 flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined">shopping_cart</span>
+                            Add to Cart
+                        </button>
+<button class="h-12 w-12 flex items-center justify-center rounded-lg border border-slate-300 dark:border-slate-700 text-slate-500 hover:text-red-500 hover:border-red-200 hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<div class="border-b border-slate-200 dark:border-slate-800">
+<nav aria-label="Tabs" class="flex gap-8 overflow-x-auto">
+<button class="border-b-2 border-primary text-primary whitespace-nowrap py-4 px-1 text-sm font-medium">
+                        Product Features
+                    </button>
+<button class="border-b-2 border-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300 whitespace-nowrap py-4 px-1 text-sm font-medium">
+                        Technical Specs
+                    </button>
+<button class="border-b-2 border-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300 whitespace-nowrap py-4 px-1 text-sm font-medium">
+                        Customer Reviews
+                    </button>
+</nav>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="p-6 rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 mb-4">
+<span class="material-symbols-outlined text-[28px]">speed</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Ultra-Fast Response</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        Experience zero latency with our high-performance processing unit, ensuring every keystroke is registered instantly for competitive gaming.
+                    </p>
+</div>
+<div class="p-6 rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mb-4">
+<span class="material-symbols-outlined text-[28px]">palette</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Immersive RGB</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        Choose from preset lighting effects or create your own with 16.8 million colors. Sync lighting with your other devices seamlessly.
+                    </p>
+</div>
+<div class="p-6 rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400 mb-4">
+<span class="material-symbols-outlined text-[28px]">build</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Aircraft-Grade Build</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        Constructed with an aircraft-grade aluminum top plate, this keyboard is built for a lifetime of gaming and typing stability.
+                    </p>
+</div>
+</div>
+<div class="mt-8 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+<table class="w-full text-left text-sm text-slate-600 dark:text-slate-400">
+<tbody class="divide-y divide-slate-200 dark:divide-slate-800 bg-white dark:bg-surface-dark">
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+<th class="px-6 py-4 font-medium text-slate-900 dark:text-white w-1/3">Switch Type</th>
+<td class="px-6 py-4">Mechanical Blue (Tactile &amp; Clicky)</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+<th class="px-6 py-4 font-medium text-slate-900 dark:text-white">Connection</th>
+<td class="px-6 py-4">USB-C Wired (Detachable Cable)</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+<th class="px-6 py-4 font-medium text-slate-900 dark:text-white">Key Lifespan</th>
+<td class="px-6 py-4">50 Million Keystrokes</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+<th class="px-6 py-4 font-medium text-slate-900 dark:text-white">Dimensions</th>
+<td class="px-6 py-4">440mm x 135mm x 35mm</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-8">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6">Customer Reviews</h3>
+<div class="flex flex-col gap-4">
+<div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/30 border border-slate-100 dark:border-slate-800">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-slate-300 dark:bg-slate-600 flex items-center justify-center text-xs font-bold text-white">JD</div>
+<span class="text-sm font-semibold text-slate-900 dark:text-white">John Doe</span>
+</div>
+<div class="flex text-yellow-400 text-[16px]">
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400">Best keyboard I've ever owned. The clicky keys are so satisfying and the RGB looks amazing in my setup.</p>
+</div>
+<div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/30 border border-slate-100 dark:border-slate-800">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-slate-300 dark:bg-slate-600 flex items-center justify-center text-xs font-bold text-white">AS</div>
+<span class="text-sm font-semibold text-slate-900 dark:text-white">Alice Smith</span>
+</div>
+<div class="flex text-yellow-400 text-[16px]">
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-slate-300">star</span>
+</div>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400">Great build quality. Software takes a bit to get used to, but the hardware is top notch for the price.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

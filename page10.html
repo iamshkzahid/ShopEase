@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ShopEase - UltraSlim Laptop 15"</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "primary-dark": "#0f4bc0",
+                        "background-light": "#f8f9fc",
+                        "background-dark": "#101622",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2230",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-50 min-h-screen flex flex-col">
+<header class="sticky top-0 z-50 flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-surface-light dark:bg-surface-dark px-6 py-3 shadow-sm">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3 text-slate-900 dark:text-white" href="index.html">
+<div class="flex items-center justify-center size-8 bg-primary rounded-lg text-white">
+<span class="material-symbols-outlined">shopping_bag</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tight">ShopEase</h2>
+</a>
+<label class="hidden md:flex flex-col min-w-[320px]">
+<div class="relative flex w-full items-center rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 focus-within:ring-2 focus-within:ring-primary/50 transition-all">
+<div class="absolute left-3 flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full bg-transparent border-none py-2.5 pl-10 pr-4 text-sm text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:ring-0" placeholder="Search products, brands, and categories..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Account</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Wishlist</a>
+<div class="relative cursor-pointer group">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors flex items-center gap-1" href="#">
+                        Cart
+                        <span class="flex items-center justify-center w-5 h-5 bg-primary text-white text-[10px] rounded-full">2</span>
+</a>
+</div>
+</nav>
+<button class="flex items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-bold transition-all shadow-md shadow-primary/20">
+                Sign In
+            </button>
+</div>
+</header>
+<div class="flex flex-1 w-full max-w-[1440px] mx-auto">
+<aside class="hidden lg:flex w-64 flex-col gap-6 border-r border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-6 shrink-0 h-[calc(100vh-64px)] sticky top-[64px] overflow-y-auto">
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-1">
+<h1 class="text-slate-900 dark:text-white text-base font-bold">Categories</h1>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Browse by Type</p>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary dark:text-blue-400 font-medium transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px] fill-1">laptop_chromebook</span>
+<span class="text-sm">Computers</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px]">smartphone</span>
+<span class="text-sm">Phones</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px]">headphones</span>
+<span class="text-sm">Audio</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+<span class="text-sm">Cameras</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px]">watch</span>
+<span class="text-sm">Wearables</span>
+</a>
+</nav>
+</div>
+<hr class="border-slate-200 dark:border-slate-800"/>
+<div class="flex flex-col gap-3 p-4 bg-slate-100 dark:bg-slate-800 rounded-xl">
+<h3 class="text-sm font-bold text-slate-900 dark:text-white">Summer Sale</h3>
+<p class="text-xs text-slate-500 dark:text-slate-400">Get up to 30% off on selected accessories.</p>
+<button class="text-xs font-medium text-primary hover:underline self-start">View Details</button>
+</div>
+</aside>
+<main class="flex-1 flex flex-col min-w-0 p-4 lg:p-8 bg-background-light dark:bg-background-dark">
+<div class="flex items-center gap-2 text-sm mb-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="index.html">Home</a>
+<span class="text-slate-300 dark:text-slate-600">/</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Computers</a>
+<span class="text-slate-300 dark:text-slate-600">/</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Laptops</a>
+<span class="text-slate-300 dark:text-slate-600">/</span>
+<span class="text-slate-900 dark:text-white font-medium">UltraSlim Laptop 15"</span>
+</div>
+<div class="flex flex-col lg:flex-row gap-8 xl:gap-12 mb-12">
+<div class="w-full lg:w-3/5 flex flex-col gap-4">
+<div class="relative aspect-[16/10] bg-white dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden flex items-center justify-center p-8 group">
+<img alt="UltraSlim Laptop 15 Front View" class="w-full h-auto object-contain max-h-[500px] transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvWFddwlRnpvZvpHFKyr4SOXe9aK4FFwBNlgMvoeNgWO5j7Gy-TMZOyFra39-S6ShUF178WJUmgX4zFFWQNpuGa6uhiYJzgiP8oJiJj6u4Onp6OmCm1iogYKLaOEJUPSiwOeBcS6S8EQq9PURLWkbQFjJfvWBXYsFm6kBbg_KYX72OdSzGzy0mu61ryBjPz4VXK7bI_sItrZUWFyGm9qunNoi6GCV1TzxlrYHY0-UzhiSUKr0ZbXJvfmGXRAgHblhIUDuAmnyJk-w"/>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="p-2 rounded-full bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 text-slate-400 hover:text-red-500 hover:border-red-200 dark:hover:border-red-900 transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<button class="p-2 rounded-full bg-white dark:bg-slate-800 shadow-sm border border-slate-200 dark:border-slate-700 text-slate-400 hover:text-primary hover:border-blue-200 dark:hover:border-blue-900 transition-colors">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<button class="relative aspect-square rounded-lg border-2 border-primary overflow-hidden p-2 bg-white dark:bg-surface-dark">
+<img alt="Thumbnail 1" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvWFddwlRnpvZvpHFKyr4SOXe9aK4FFwBNlgMvoeNgWO5j7Gy-TMZOyFra39-S6ShUF178WJUmgX4zFFWQNpuGa6uhiYJzgiP8oJiJj6u4Onp6OmCm1iogYKLaOEJUPSiwOeBcS6S8EQq9PURLWkbQFjJfvWBXYsFm6kBbg_KYX72OdSzGzy0mu61ryBjPz4VXK7bI_sItrZUWFyGm9qunNoi6GCV1TzxlrYHY0-UzhiSUKr0ZbXJvfmGXRAgHblhIUDuAmnyJk-w"/>
+</button>
+<button class="relative aspect-square rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden p-2 bg-white dark:bg-surface-dark hover:border-primary/50 transition-colors">
+<div class="w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs text-slate-400">Side</div>
+</button>
+<button class="relative aspect-square rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden p-2 bg-white dark:bg-surface-dark hover:border-primary/50 transition-colors">
+<div class="w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs text-slate-400">Back</div>
+</button>
+<button class="relative aspect-square rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden p-2 bg-white dark:bg-surface-dark hover:border-primary/50 transition-colors">
+<div class="w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs text-slate-400">Keyboard</div>
+</button>
+</div>
+</div>
+<div class="w-full lg:w-2/5 flex flex-col">
+<div class="mb-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wide">Best Seller</span>
+<span class="px-2.5 py-0.5 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold uppercase tracking-wide">In Stock</span>
+</div>
+<h1 class="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white mb-2 leading-tight">UltraSlim Laptop 15"</h1>
+<div class="flex items-center gap-4 text-sm">
+<div class="flex items-center gap-1 text-yellow-400">
+<span class="material-symbols-outlined text-[18px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-slate-500 dark:text-slate-400 font-medium border-b border-dashed border-slate-400 cursor-pointer hover:text-primary hover:border-primary transition-colors">128 Reviews</span>
+</div>
+</div>
+<div class="flex items-baseline gap-3 mb-6">
+<span class="text-4xl font-bold text-slate-900 dark:text-white">$1,299.00</span>
+<span class="text-lg text-slate-400 line-through">$1,499.00</span>
+<span class="text-sm font-medium text-green-600 dark:text-green-400">-13%</span>
+</div>
+<p class="text-slate-600 dark:text-slate-300 text-base leading-relaxed mb-6">
+                        Experience power and portability with the UltraSlim Laptop 15". Featuring a stunning Retina display, all-day battery life, and the latest processor for seamless multitasking. Ideally suited for professionals and creatives on the go.
+                    </p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-start gap-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary mt-0.5">memory</span>
+<div>
+<h4 class="text-sm font-semibold text-slate-900 dark:text-white">Processor</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">Octa-Core M2 Pro</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary mt-0.5">screenshot_monitor</span>
+<div>
+<h4 class="text-sm font-semibold text-slate-900 dark:text-white">Display</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">15.6" 4K OLED</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary mt-0.5">hard_drive</span>
+<div>
+<h4 class="text-sm font-semibold text-slate-900 dark:text-white">Storage</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">1TB NVMe SSD</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary mt-0.5">battery_charging_full</span>
+<div>
+<h4 class="text-sm font-semibold text-slate-900 dark:text-white">Battery</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">Up to 18 Hours</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 mb-8 border-t border-slate-200 dark:border-slate-800 pt-6">
+<div>
+<span class="text-sm font-medium text-slate-900 dark:text-white mb-2 block">Color</span>
+<div class="flex gap-3">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="color" type="radio"/>
+<div class="w-10 h-10 rounded-full bg-slate-300 ring-2 ring-offset-2 ring-offset-white dark:ring-offset-background-dark ring-transparent peer-checked:ring-primary hover:ring-slate-400 transition-all"></div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="color" type="radio"/>
+<div class="w-10 h-10 rounded-full bg-slate-800 ring-2 ring-offset-2 ring-offset-white dark:ring-offset-background-dark ring-transparent peer-checked:ring-primary hover:ring-slate-600 transition-all"></div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="color" type="radio"/>
+<div class="w-10 h-10 rounded-full bg-[#e5e5e5] border border-slate-200 ring-2 ring-offset-2 ring-offset-white dark:ring-offset-background-dark ring-transparent peer-checked:ring-primary hover:ring-slate-300 transition-all"></div>
+</label>
+</div>
+</div>
+<div>
+<span class="text-sm font-medium text-slate-900 dark:text-white mb-2 block">Memory (RAM)</span>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 text-sm font-medium rounded-lg border border-slate-200 dark:border-slate-700 hover:border-primary text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-primary transition-all">16GB</button>
+<button class="px-4 py-2 text-sm font-medium rounded-lg border-2 border-primary text-primary bg-primary/5 dark:bg-primary/10">32GB</button>
+<button class="px-4 py-2 text-sm font-medium rounded-lg border border-slate-200 dark:border-slate-700 hover:border-primary text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-primary transition-all">64GB</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-auto">
+<div class="flex items-center rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 w-fit">
+<button class="w-10 h-12 flex items-center justify-center text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<input class="w-10 h-12 text-center border-none bg-transparent p-0 text-slate-900 dark:text-white font-medium focus:ring-0" readonly="" type="text" value="1"/>
+<button class="w-10 h-12 flex items-center justify-center text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<button class="flex-1 h-12 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg shadow-lg shadow-primary/30 flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined">shopping_cart</span>
+                            Add to Cart
+                        </button>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-light dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden mb-12">
+<div class="flex border-b border-slate-200 dark:border-slate-800 overflow-x-auto">
+<button class="px-6 py-4 text-sm font-bold text-primary border-b-2 border-primary whitespace-nowrap">Product Overview</button>
+<button class="px-6 py-4 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition-colors">Technical Specifications</button>
+<button class="px-6 py-4 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition-colors">Customer Reviews (128)</button>
+<button class="px-6 py-4 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition-colors">Shipping &amp; Returns</button>
+</div>
+<div class="p-6 lg:p-10">
+<div class="flex flex-col gap-8">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Incredibly Thin. Astonishingly Powerful.</h3>
+<p class="text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                                    The new UltraSlim Laptop 15" redefines portability without compromising on performance. Engineered with aerospace-grade aluminum, it weighs just under 1.2kg while housing the most advanced cooling system we've ever built.
+                                </p>
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-200">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<span class="text-sm">15% Thinner than previous generation</span>
+</li>
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-200">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<span class="text-sm">Silent active cooling technology</span>
+</li>
+<li class="flex items-center gap-3 text-slate-700 dark:text-slate-200">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<span class="text-sm">Reinforced durability with military-grade testing</span>
+</li>
+</ul>
+</div>
+<div class="bg-slate-100 dark:bg-slate-900 rounded-xl aspect-video flex items-center justify-center">
+<span class="text-slate-400 text-sm">Feature Image: Slim Profile Side View</span>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-6 mt-6">
+<div class="p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 text-primary rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">speed</span>
+</div>
+<h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Blazing Fast</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Powered by the latest GenAI processors, rendering videos and compiling code happens in record time.</p>
+</div>
+<div class="p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">palette</span>
+</div>
+<h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">True Colors</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">100% DCI-P3 color gamut coverage ensures what you see on screen is true to life.</p>
+</div>
+<div class="p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800">
+<div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">lock</span>
+</div>
+<h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Secure &amp; Private</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Hardware-level encryption and a physical webcam shutter keep your data solely yours.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white">You Might Also Like</h2>
+<a class="text-sm font-medium text-primary hover:underline flex items-center gap-1" href="#">
+                        View All
+                        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-900">
+<img alt="Mouse" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9VUVpPlgbXkKkC6wUeY0JyR2pO-mda5Hp-1vOcAtV3zKzo7HqBNEYwUxDQqJQ11ZSFukB1evGcsAGduHBUu177r5gxTKKNEHJVxPeAqgg2198eBf_06Txm_NVy5ZjXR70WMADB0vMyHzeH9c9x6CbgnFfidwLS9HNICcYaTOPnJOSdnLsKwV1-XnXvv0IjhPEvW5QT4suGBoEN7jlIIALV4SWZhFm_uJy-C-p9SZHjMcxpz4qdIkvhTKTD5CL1PqQ1RQAZ-j43kg"/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-slate-900 dark:text-white font-semibold text-base mb-1 group-hover:text-primary transition-colors">Wireless Mouse</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Ergonomic design</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-base font-bold text-slate-900 dark:text-white">$35.00</span>
+<button class="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white transition-colors text-primary">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-900">
+<img alt="Keyboard" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGza0Ke1t2CKGpGi1bC9-qQqgK6TPNMq17Ek_qumJHiiXpQxOWDTFoZLQfie7tzItY9DEiOuy7XS1frG9GKCVSDNIr-4VVFqRe1AHajNxgtW2PMfG9b2jGZRXK35r1Akwipf72m4EtP1d9ppj8o8vaTFwiV2rPj6d5sIbWoBnOKlTpgBKcaYtBIsPgBtOGOvFd3pnSzDVgx9PuTY_fpgYoTR_utrHlAQQveBp23DhL77utt5-83k0pkU6pYhibkECdmiw4UYdmLpw"/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-slate-900 dark:text-white font-semibold text-base mb-1 group-hover:text-primary transition-colors">Mech Keyboard</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-3">RGB Backlit</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-base font-bold text-slate-900 dark:text-white">$129.00</span>
+<button class="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white transition-colors text-primary">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-900">
+<img alt="Headphones" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPzzfohznBqvfNVlHen3RK3bJmUVEmcAc0qNu2wVbCdml6ktSL0aKuM9D_1yqWYIxk0zTRRaF1Sm7vDATYtWGfosWP6y9X4g8rzeOEroF74o04PKkt1BrxqHkLbifVgu55mp2YnBKzW5XTVQUQa_BPp1bYUbIwAhLziKPbhK4pkKXX2sAR0mHa-0rQReqIAv2YsrFqqy_Z7pe80NQGUtg2oS0D0gfHd72YXoKy_AFk-eJTjdByqBedm0NUyb0J5jeBjY2eEGvKtpU"/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-slate-900 dark:text-white font-semibold text-base mb-1 group-hover:text-primary transition-colors">Noise Cancelling</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Premium Audio</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-base font-bold text-slate-900 dark:text-white">$299.00</span>
+<button class="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white transition-colors text-primary">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-900">
+<img alt="Watch" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI-1Ct1uCO6geVIMjO-OuxJftWOTnwIe2D5SNC2RFlcyiojtWu5wuh_Ypgjj6Zjegj2jwoUrZC3PQdTX9zf5nyLwd_-CBqY_fPCvSUu97k0bbaXFXLkEBPzTkBjkd2E_npYdvucTeNOlDNlscKX1h0WZzhLh9LBBm0LK5lF3HwKP9d5sPWC_XY52pY-Dod3acm5KWh1-uuKJv3Sd-PBnBbrapI9m4Xwzf9XskY9bN2p0HJGMLf4M0Z6nT8ByKpxi8fEgfh8MLKAOE"/>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-slate-900 dark:text-white font-semibold text-base mb-1 group-hover:text-primary transition-colors">Smart Watch S7</h3>
+<p class="text-slate-500 dark:text-slate-400 text-xs mb-3">Fitness Tracker</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-base font-bold text-slate-900 dark:text-white">$399.00</span>
+<button class="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white transition-colors text-primary">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

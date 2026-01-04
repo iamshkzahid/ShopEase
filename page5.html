@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ShopEase - Ergonomic Wireless Mouse</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "primary-dark": "#0f4bc0",
+                        "background-light": "#f8f9fc",
+                        "background-dark": "#101622",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2230",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-50 min-h-screen flex flex-col">
+<header class="sticky top-0 z-50 flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-surface-light dark:bg-surface-dark px-6 py-3 shadow-sm">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3 text-slate-900 dark:text-white" href="index.html">
+<div class="flex items-center justify-center size-8 bg-primary rounded-lg text-white">
+<span class="material-symbols-outlined">shopping_bag</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tight">ShopEase</h2>
+</a>
+<label class="hidden md:flex flex-col min-w-[320px]">
+<div class="relative flex w-full items-center rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 focus-within:ring-2 focus-within:ring-primary/50 transition-all">
+<div class="absolute left-3 flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full bg-transparent border-none py-2.5 pl-10 pr-4 text-sm text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:ring-0" placeholder="Search products, brands, and categories..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Account</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Wishlist</a>
+<div class="relative cursor-pointer group">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors flex items-center gap-1" href="#">
+                        Cart
+                        <span class="flex items-center justify-center w-5 h-5 bg-primary text-white text-[10px] rounded-full">2</span>
+</a>
+</div>
+</nav>
+<button class="flex items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-bold transition-all shadow-md shadow-primary/20">
+                Sign In
+            </button>
+</div>
+</header>
+<div class="flex flex-1 w-full max-w-[1440px] mx-auto">
+<main class="flex-1 flex flex-col min-w-0 p-4 lg:p-8 bg-background-light dark:bg-background-dark">
+<div class="flex items-center gap-2 text-sm mb-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="index.html">Home</a>
+<span class="text-slate-300 dark:text-slate-600">/</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Electronics</a>
+<span class="text-slate-300 dark:text-slate-600">/</span>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Accessories</a>
+<span class="text-slate-300 dark:text-slate-600">/</span>
+<span class="text-slate-900 dark:text-white font-medium">Ergonomic Wireless Mouse</span>
+</div>
+<div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
+<div class="w-full lg:w-1/2 flex flex-col gap-4">
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-surface-dark">
+<img alt="Ergonomic Wireless Mouse Main View" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9VUVpPlgbXkKkC6wUeY0JyR2pO-mda5Hp-1vOcAtV3zKzo7HqBNEYwUxDQqJQ11ZSFukB1evGcsAGduHBUu177r5gxTKKNEHJVxPeAqgg2198eBf_06Txm_NVy5ZjXR70WMADB0vMyHzeH9c9x6CbgnFfidwLS9HNICcYaTOPnJOSdnLsKwV1-XnXvv0IjhPEvW5QT4suGBoEN7jlIIALV4SWZhFm_uJy-C-p9SZHjMcxpz4qdIkvhTKTD5CL1PqQ1RQAZ-j43kg"/>
+<div class="absolute top-4 right-4 z-10">
+<button class="p-2.5 rounded-full bg-white/80 dark:bg-black/50 hover:bg-white dark:hover:bg-black text-slate-400 hover:text-red-500 transition-colors backdrop-blur-sm shadow-sm">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-4 left-4 z-10">
+<span class="px-3 py-1.5 bg-green-600 text-white text-xs font-bold uppercase rounded-md tracking-wider shadow-sm">In Stock</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square rounded-lg border-2 border-primary overflow-hidden cursor-pointer">
+<img alt="Side view" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9VUVpPlgbXkKkC6wUeY0JyR2pO-mda5Hp-1vOcAtV3zKzo7HqBNEYwUxDQqJQ11ZSFukB1evGcsAGduHBUu177r5gxTKKNEHJVxPeAqgg2198eBf_06Txm_NVy5ZjXR70WMADB0vMyHzeH9c9x6CbgnFfidwLS9HNICcYaTOPnJOSdnLsKwV1-XnXvv0IjhPEvW5QT4suGBoEN7jlIIALV4SWZhFm_uJy-C-p9SZHjMcxpz4qdIkvhTKTD5CL1PqQ1RQAZ-j43kg"/>
+</div>
+<div class="aspect-square rounded-lg border border-slate-200 dark:border-slate-800 overflow-hidden cursor-pointer hover:border-primary/50 transition-colors">
+<div class="w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400 text-3xl">mouse</span>
+</div>
+</div>
+<div class="aspect-square rounded-lg border border-slate-200 dark:border-slate-800 overflow-hidden cursor-pointer hover:border-primary/50 transition-colors">
+<div class="w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400 text-3xl">360</span>
+</div>
+</div>
+<div class="aspect-square rounded-lg border border-slate-200 dark:border-slate-800 overflow-hidden cursor-pointer hover:border-primary/50 transition-colors">
+<div class="w-full h-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-400 text-3xl">play_circle</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 flex flex-col">
+<div class="mb-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-semibold">Best Seller</span>
+<div class="flex items-center text-yellow-400 text-sm">
+<span class="material-symbols-outlined text-[18px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-1" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="text-sm text-slate-500 dark:text-slate-400">(432 reviews)</span>
+</div>
+<h1 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-2">Ergonomic Wireless Mouse</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300">Vertical Design for Comfort &amp; Precision</p>
+</div>
+<div class="flex items-end gap-4 mb-6 pb-6 border-b border-slate-200 dark:border-slate-800">
+<div class="flex flex-col">
+<span class="text-sm text-slate-400 line-through font-medium">$49.99</span>
+<span class="text-4xl font-bold text-primary">$35.00</span>
+</div>
+<span class="mb-1 text-sm font-medium text-green-600 bg-green-100 dark:bg-green-900/30 dark:text-green-400 px-2 py-1 rounded">Save 30%</span>
+</div>
+<div class="mb-8">
+<p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+                            Designed to reduce muscle strain and decrease wrist pressure, this ergonomic mouse features a unique vertical angle. With advanced optical tracking and wireless connectivity, it delivers precise control while keeping your hand in a natural handshake position.
+                        </p>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 text-sm text-slate-700 dark:text-slate-200">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check_circle</span>
+<span>Vertical ergonomic design</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check_circle</span>
+<span>2.4GHz Wireless &amp; Bluetooth</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check_circle</span>
+<span>Adjustable DPI (800-1600)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500 text-[20px]">check_circle</span>
+<span>Rechargeable battery</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-col gap-4 mb-8">
+<div class="flex flex-wrap items-center gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-sm font-semibold text-slate-900 dark:text-white">Color: <span class="font-normal text-slate-500">Matte Black</span></span>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full bg-slate-900 border-2 border-primary ring-2 ring-offset-2 ring-primary ring-offset-white dark:ring-offset-background-dark"></button>
+<button class="w-8 h-8 rounded-full bg-slate-400 hover:ring-2 hover:ring-offset-2 hover:ring-slate-400 hover:ring-offset-white dark:hover:ring-offset-background-dark transition-all"></button>
+<button class="w-8 h-8 rounded-full bg-white border border-slate-200 hover:ring-2 hover:ring-offset-2 hover:ring-slate-200 hover:ring-offset-white dark:hover:ring-offset-background-dark transition-all"></button>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<div class="flex items-center border border-slate-300 dark:border-slate-700 rounded-lg h-12 w-fit bg-white dark:bg-surface-dark">
+<button class="px-3 py-1 text-slate-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<input class="w-12 text-center bg-transparent border-none p-0 text-slate-900 dark:text-white font-medium focus:ring-0" type="text" value="1"/>
+<button class="px-3 py-1 text-slate-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+<button class="flex-1 h-12 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg shadow-lg shadow-primary/30 flex items-center justify-center gap-2 transition-all transform active:scale-95">
+<span class="material-symbols-outlined">shopping_cart</span>
+                                Add to Cart
+                            </button>
+<button class="h-12 w-12 border border-slate-300 dark:border-slate-700 rounded-lg flex items-center justify-center text-slate-500 hover:text-red-500 hover:border-red-200 hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3 p-4 bg-slate-50 dark:bg-surface-dark/50 rounded-lg border border-slate-200 dark:border-slate-800 text-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500">local_shipping</span>
+<div>
+<span class="font-medium text-slate-900 dark:text-white">Free Delivery</span>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Enter your Postal code for Delivery Availability</p>
+</div>
+</div>
+<div class="w-full h-px bg-slate-200 dark:bg-slate-700"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500">assignment_return</span>
+<div>
+<span class="font-medium text-slate-900 dark:text-white">Return Delivery</span>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Free 30 Days Delivery Returns. <a class="underline" href="#">Details</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 flex flex-col gap-10">
+<section>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">featured_play_list</span>
+                            Detailed Features
+                        </h2>
+<div class="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-300">
+<p class="mb-4">
+                                Experience a new level of comfort with our Ergonomic Wireless Mouse. The vertical design promotes a natural handshake position, reducing the strain on your wrist and forearm associated with traditional mice. Ideal for long hours of work or gaming.
+                            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+<div class="p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined">accessibility_new</span>
+</div>
+<h3 class="font-semibold text-slate-900 dark:text-white mb-2">Ergonomic Vertical Build</h3>
+<p class="text-sm">57° vertical angle improves wrist posture and reduces pressure on the soft part of the wrist.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<div class="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 mb-3">
+<span class="material-symbols-outlined">wifi</span>
+</div>
+<h3 class="font-semibold text-slate-900 dark:text-white mb-2">Dual Connectivity</h3>
+<p class="text-sm">Connect via Bluetooth or the included USB receiver. Switch between 3 devices with a button press.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 mb-3">
+<span class="material-symbols-outlined">battery_charging_full</span>
+</div>
+<h3 class="font-semibold text-slate-900 dark:text-white mb-2">Long Battery Life</h3>
+<p class="text-sm">Stay powered for up to 4 months on a full charge. Quick charge 1 min for 3 hours of use.</p>
+</div>
+<div class="p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<div class="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-600 mb-3">
+<span class="material-symbols-outlined">ads_click</span>
+</div>
+<h3 class="font-semibold text-slate-900 dark:text-white mb-2">Precise Tracking</h3>
+<p class="text-sm">High-precision optical tracking sensor (4000 DPI) works on almost any surface with minimal hand movement.</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">settings</span>
+                            Technical Specifications
+                        </h2>
+<div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
+<table class="w-full text-sm text-left">
+<tbody class="divide-y divide-slate-200 dark:divide-slate-800">
+<tr class="bg-slate-50 dark:bg-surface-dark">
+<th class="px-6 py-3 font-medium text-slate-900 dark:text-white w-1/3">Sensor Technology</th>
+<td class="px-6 py-3 text-slate-600 dark:text-slate-300">High Precision Optical Tracking</td>
+</tr>
+<tr class="bg-white dark:bg-background-dark">
+<th class="px-6 py-3 font-medium text-slate-900 dark:text-white">DPI (Min/Max)</th>
+<td class="px-6 py-3 text-slate-600 dark:text-slate-300">400-4000 dpi (Adjustable in 50dpi increments)</td>
+</tr>
+<tr class="bg-slate-50 dark:bg-surface-dark">
+<th class="px-6 py-3 font-medium text-slate-900 dark:text-white">Buttons</th>
+<td class="px-6 py-3 text-slate-600 dark:text-slate-300">6 (Left/Right-click, Back/Forward, Middle click, Scroll-wheel with middle click)</td>
+</tr>
+<tr class="bg-white dark:bg-background-dark">
+<th class="px-6 py-3 font-medium text-slate-900 dark:text-white">Battery</th>
+<td class="px-6 py-3 text-slate-600 dark:text-slate-300">Rechargeable Li-Po (240 mAh)</td>
+</tr>
+<tr class="bg-slate-50 dark:bg-surface-dark">
+<th class="px-6 py-3 font-medium text-slate-900 dark:text-white">Wireless Operating Distance</th>
+<td class="px-6 py-3 text-slate-600 dark:text-slate-300">10m wireless range</td>
+</tr>
+<tr class="bg-white dark:bg-background-dark">
+<th class="px-6 py-3 font-medium text-slate-900 dark:text-white">Dimensions</th>
+<td class="px-6 py-3 text-slate-600 dark:text-slate-300">H: 78.5mm, W: 79mm, D: 120mm</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+<div class="lg:col-span-1">
+<section class="sticky top-24">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">star</span>
+                            Customer Reviews
+                        </h2>
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl border border-slate-200 dark:border-slate-800 p-6 mb-6">
+<div class="flex items-center justify-between mb-4">
+<div class="flex flex-col">
+<span class="text-4xl font-bold text-slate-900 dark:text-white">4.8</span>
+<div class="flex text-yellow-400 text-sm my-1">
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="text-xs text-slate-500">Based on 432 reviews</span>
+</div>
+<button class="px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-white text-sm font-medium rounded-lg transition-colors">
+                                    Write a Review
+                                </button>
+</div>
+<div class="flex flex-col gap-2 text-xs text-slate-600 dark:text-slate-400">
+<div class="flex items-center gap-3">
+<span class="w-8">5 star</span>
+<div class="flex-1 h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-yellow-400 w-[78%]"></div>
+</div>
+<span class="w-8 text-right">78%</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-8">4 star</span>
+<div class="flex-1 h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-yellow-400 w-[15%]"></div>
+</div>
+<span class="w-8 text-right">15%</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-8">3 star</span>
+<div class="flex-1 h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-yellow-400 w-[4%]"></div>
+</div>
+<span class="w-8 text-right">4%</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-8">2 star</span>
+<div class="flex-1 h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-yellow-400 w-[2%]"></div>
+</div>
+<span class="w-8 text-right">2%</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-8">1 star</span>
+<div class="flex-1 h-2 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-yellow-400 w-[1%]"></div>
+</div>
+<span class="w-8 text-right">1%</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="bg-white dark:bg-surface-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center font-bold text-xs">JD</div>
+<span class="text-sm font-semibold text-slate-900 dark:text-white">John Doe</span>
+</div>
+<span class="text-xs text-slate-400">2 weeks ago</span>
+</div>
+<div class="flex text-yellow-400 text-xs mb-2">
+<span class="material-symbols-outlined text-[16px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300">
+                                    "Absolutely game changer for my wrist pain. It took a day to get used to, but now I can't go back to a regular mouse."
+                                </p>
+</div>
+<div class="bg-white dark:bg-surface-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center font-bold text-xs">SA</div>
+<span class="text-sm font-semibold text-slate-900 dark:text-white">Sarah A.</span>
+</div>
+<span class="text-xs text-slate-400">1 month ago</span>
+</div>
+<div class="flex text-yellow-400 text-xs mb-2">
+<span class="material-symbols-outlined text-[16px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]">star_border</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300">
+                                    "Great battery life and connectivity. The texture feels premium. Slightly large for smaller hands though."
+                                </p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

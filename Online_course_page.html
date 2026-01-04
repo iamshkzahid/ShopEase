@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Course Platform - Data Science Masterclass</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased overflow-x-hidden selection:bg-primary/20">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#101622]/95 backdrop-blur-sm">
+<div class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-slate-900 dark:text-white cursor-pointer">
+<div class="text-primary">
+<span class="material-symbols-outlined !text-3xl fill">school</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight">CoursePlatform</h2>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Categories</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Teach with us</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">My Learning</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<div class="hidden sm:flex w-full max-w-xs items-center rounded-lg bg-slate-100 dark:bg-slate-800 border border-transparent focus-within:border-primary/50 focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+<span class="material-symbols-outlined text-slate-400 pl-3">search</span>
+<input class="w-full bg-transparent border-none text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:ring-0" placeholder="Search for anything"/>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-600 dark:text-slate-300 hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] text-white font-bold">2</span>
+</button>
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-9 border-2 border-slate-200 dark:border-slate-700 cursor-pointer" data-alt="User avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAI70lzI8mpPAZ8tm7AyNnWW8M2bbe6fKahBLOfgLj-l-bm5zNNfqxFL_XToVWV1zMUwXKyFIzK3Q_zEVdSE792aUTcXsisQpDCM_dc9YPsgV_LUZUdIpWevB6VMXbX-FJwYyBf_TvbKOfBp0dFu3qphJ1H4itQ1MObUew7xdGyBj27gcTNqLj8BrfxTs9HlHEQlzYn_9bDCuttrntYCldy8FPGZbIBdNsf9YaarimGWi1du7TCDN_xX93qHLk3ITaIjD9U39qNHRw");'></div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Wrapper -->
+<div class="relative w-full max-w-7xl mx-auto px-6 py-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Course Content -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- Breadcrumbs -->
+<nav class="flex flex-wrap gap-2 text-sm font-medium">
+<a class="text-primary hover:underline" href="#">Home</a>
+<span class="text-slate-400">/</span>
+<a class="text-primary hover:underline" href="#">Development</a>
+<span class="text-slate-400">/</span>
+<span class="text-slate-500 dark:text-slate-400">Data Science</span>
+</nav>
+<!-- Hero Header -->
+<div>
+<h1 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight mb-4">
+                        Mastering Data Science: From Scratch to Hero
+                    </h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-4">
+                        Become a Data Scientist and learn how to analyze data, create beautiful visualizations, and use powerful machine learning algorithms!
+                    </p>
+<div class="flex flex-wrap items-center gap-4 text-sm">
+<span class="bg-[#eceb98] text-[#3d3c0a] px-2 py-1 rounded font-bold text-xs uppercase">Bestseller</span>
+<div class="flex items-center gap-1 text-[#f59e0b]">
+<span class="font-bold">4.8</span>
+<div class="flex">
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm" style="font-variation-settings: 'FILL' 0.5;">star</span>
+</div>
+</div>
+<span class="text-primary underline cursor-pointer">(12,450 ratings)</span>
+<span class="text-slate-500 dark:text-slate-400">45,900 students</span>
+</div>
+<div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-500 dark:text-slate-400">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base">person</span>
+                            Created by <a class="text-primary underline ml-1" href="#">Dr. Angela Yu</a>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base">update</span>
+                            Last updated 10/2023
+                        </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base">language</span>
+                            English
+                        </div>
+</div>
+</div>
+<!-- What You'll Learn Box -->
+<div class="border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/50 p-6 rounded-xl">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-4">What you'll learn</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">check</span>
+<span class="text-sm text-slate-700 dark:text-slate-300">Master Machine Learning on Python &amp; R</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">check</span>
+<span class="text-sm text-slate-700 dark:text-slate-300">Have a great intuition of many Machine Learning models</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">check</span>
+<span class="text-sm text-slate-700 dark:text-slate-300">Make accurate predictions</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">check</span>
+<span class="text-sm text-slate-700 dark:text-slate-300">Make powerful analysis</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">check</span>
+<span class="text-sm text-slate-700 dark:text-slate-300">Build an Army of powerful Machine Learning models</span>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">check</span>
+<span class="text-sm text-slate-700 dark:text-slate-300">Use Reinforcement Learning for content marketing</span>
+</div>
+</div>
+</div>
+<!-- Course Content (Accordion) -->
+<div class="flex flex-col gap-4">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Course Content</h2>
+<div class="flex justify-between text-sm text-slate-500 dark:text-slate-400 mb-2">
+<span>12 sections • 45 lectures • 12h 30m total length</span>
+<button class="text-primary font-medium hover:underline">Expand all sections</button>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden divide-y divide-slate-200 dark:divide-slate-700">
+<!-- Module 1 -->
+<details class="group bg-white dark:bg-slate-800/30" open="">
+<summary class="flex cursor-pointer items-center justify-between p-4 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700/80 transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined transition group-open:rotate-180">expand_more</span>
+<span class="font-bold text-slate-900 dark:text-white">Introduction to Data Science</span>
+</div>
+<span class="text-sm text-slate-500">3 lectures • 15min</span>
+</summary>
+<div class="p-4 flex flex-col gap-3 text-sm text-slate-600 dark:text-slate-300">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-slate-400">play_circle</span>
+<a class="hover:underline" href="#">What is Data Science?</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="text-primary text-xs font-medium" href="#">Preview</a>
+<span>05:20</span>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-slate-400">play_circle</span>
+<span>The Data Science Process</span>
+</div>
+<span>06:10</span>
+</div>
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-slate-400">play_circle</span>
+<span>Tools of the Trade</span>
+</div>
+<span>03:30</span>
+</div>
+</div>
+</details>
+<!-- Module 2 -->
+<details class="group bg-white dark:bg-slate-800/30">
+<summary class="flex cursor-pointer items-center justify-between p-4 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700/80 transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined transition group-open:rotate-180">expand_more</span>
+<span class="font-bold text-slate-900 dark:text-white">Python Basics for Data Analysis</span>
+</div>
+<span class="text-sm text-slate-500">5 lectures • 45min</span>
+</summary>
+<div class="p-4 text-sm text-slate-500">
+                                Content hidden for preview...
+                            </div>
+</details>
+<!-- Module 3 -->
+<details class="group bg-white dark:bg-slate-800/30">
+<summary class="flex cursor-pointer items-center justify-between p-4 bg-slate-50 dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700/80 transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined transition group-open:rotate-180">expand_more</span>
+<span class="font-bold text-slate-900 dark:text-white">Data Visualization with Matplotlib</span>
+</div>
+<span class="text-sm text-slate-500">4 lectures • 32min</span>
+</summary>
+<div class="p-4 text-sm text-slate-500">
+                                Content hidden for preview...
+                            </div>
+</details>
+</div>
+</div>
+<!-- Description -->
+<div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Description</h2>
+<div class="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+<p class="mb-4">
+                            Interested in the field of Machine Learning? Then this course is for you!
+                            This course has been designed by two professional Data Scientists so that we can share our knowledge and help you learn complex theory, algorithms, and coding libraries in a simple way.
+                        </p>
+<p class="mb-4">
+                            We will walk you step-by-step into the World of Machine Learning. With every tutorial, you will develop new skills and improve your understanding of this challenging yet lucrative sub-field of Data Science.
+                        </p>
+<p class="font-bold mb-2">This course is fun and exciting, but at the same time, we dive deep into Machine Learning. It is structured the following way:</p>
+<ul class="list-disc pl-5 space-y-1 mb-4">
+<li>Part 1: Data Preprocessing</li>
+<li>Part 2: Regression: Simple Linear Regression, Multiple Linear Regression, Polynomial Regression, SVR, Decision Tree Regression, Random Forest Regression</li>
+<li>Part 3: Classification: Logistic Regression, K-NN, SVM, Kernel SVM, Naive Bayes, Decision Tree Classification, Random Forest Classification</li>
+<li>Part 4: Clustering: K-Means, Hierarchical Clustering</li>
+</ul>
+</div>
+</div>
+<!-- Instructor -->
+<div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Instructor</h2>
+<div class="flex flex-col sm:flex-row gap-6">
+<div class="shrink-0">
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-28 border-4 border-slate-100 dark:border-slate-800" data-alt="Instructor portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-P6VfrYbs8iSSdbGu3MgANQCnHZSw2ENPcou-FlfkUhs6yqZ6LNzdTYSfC576Nz61V2T9vF-4I3c_w80I-MYna-_gKLBvDK6DbT83S4klLLePR4Qb3ETU_9DZ0VYo85BnStRNdF2SAoXcDINpJu6UahSFllTxmxyMLCBG7c2xyrl_IALHwmXcD-Qp77mf2UEa8SjdUiBH8ekaurG8eHwms5WVm4R1SShAlYkYsuPy69Qhx992mMj3YqjhT6yRUMWwD_QMmADnbsc");'></div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-primary underline">Dr. Angela Yu</h3>
+<p class="text-slate-500 dark:text-slate-400 font-medium text-sm">Data Scientist &amp; Developer Lead</p>
+<div class="flex gap-6 my-2 text-sm text-slate-600 dark:text-slate-400">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span>4.7 Rating</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined fill text-[18px]">school</span>
+<span>500,000 Reviews</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined fill text-[18px]">person</span>
+<span>1.5M Students</span>
+</div>
+</div>
+<p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                                I am a data scientist and I love to teach. I have been teaching for 10 years and I have taught over 1.5 million students. My mission is to help people learn how to code and how to become data scientists.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Reviews -->
+<div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Student Feedback</h2>
+<!-- Rating Summary Component -->
+<div class="flex flex-wrap gap-x-8 gap-y-6 mb-8 items-center">
+<div class="flex flex-col gap-2 items-center text-center">
+<p class="text-slate-900 dark:text-white text-6xl font-black leading-tight tracking-[-0.033em]">4.8</p>
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined fill text-[#f59e0b]">star</span>
+<span class="material-symbols-outlined fill text-[#f59e0b]">star</span>
+<span class="material-symbols-outlined fill text-[#f59e0b]">star</span>
+<span class="material-symbols-outlined fill text-[#f59e0b]">star</span>
+<span class="material-symbols-outlined fill text-[#f59e0b]" style="font-variation-settings: 'FILL' 0.5;">star</span>
+</div>
+<p class="text-slate-900 dark:text-white text-base font-bold">Course Rating</p>
+</div>
+<div class="grid min-w-[200px] max-w-[400px] flex-1 grid-cols-[auto_1fr_auto] items-center gap-x-4 gap-y-2">
+<!-- 5 Stars -->
+<div class="h-2 w-full min-w-[150px] bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-slate-500 dark:bg-slate-400 w-[70%]"></div>
+</div>
+<div class="flex gap-1 text-[#f59e0b] text-sm">
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-medium">70%</p>
+<!-- 4 Stars -->
+<div class="h-2 w-full min-w-[150px] bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-slate-500 dark:bg-slate-400 w-[20%]"></div>
+</div>
+<div class="flex gap-1 text-[#f59e0b] text-sm">
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-medium">20%</p>
+<!-- 3 Stars -->
+<div class="h-2 w-full min-w-[150px] bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-slate-500 dark:bg-slate-400 w-[5%]"></div>
+</div>
+<div class="flex gap-1 text-[#f59e0b] text-sm">
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined fill text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-medium">5%</p>
+</div>
+</div>
+<!-- Individual Reviews Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Review 1 -->
+<div class="bg-white dark:bg-slate-800 p-5 rounded-lg border border-slate-200 dark:border-slate-700">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover bg-center" data-alt="Reviewer avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdu6DzN2TKwTl_BSET0xhpyClMHr-9I8OKbV692DLkgVqsIVQXyfi-0b66uOyUT0heMulNoBkOJajkr6x31vFTIB4LqdeEpzx0QzoxtgObZleOrI36a95gdwOK81DOF2lUxkrG6t4zY8t9Uu028yJlRc7gYD7C8SfJA3_V7aP7DAfV2pQhun0yCIL3Tzx8EjoXdmtVb_bfLx69P-JPM_jtosQUcXpoY-nFk8zIbtewACP66FX9bgFokczwbe6cf9UscpD4xTHvT4U");'></div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">John Doe</h4>
+<div class="flex text-[#f59e0b] text-xs">
+<span class="material-symbols-outlined fill text-[14px]">star</span>
+<span class="material-symbols-outlined fill text-[14px]">star</span>
+<span class="material-symbols-outlined fill text-[14px]">star</span>
+<span class="material-symbols-outlined fill text-[14px]">star</span>
+<span class="material-symbols-outlined fill text-[14px]">star</span>
+</div>
+</div>
+<span class="ml-auto text-xs text-slate-400">2 weeks ago</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300">
+                                This course is amazing! I went from knowing nothing about Python to building my own Machine Learning models. The instructor is very clear and the exercises are very helpful.
+                            </p>
+</div>
+<!-- Review 2 -->
+<div class="bg-white dark:bg-slate-800 p-5 rounded-lg border border-slate-200 dark:border-slate-700">
+<div class="flex items-center gap-4 mb-4">
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 bg-cover bg-center" data-alt="Reviewer avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMLNuv6AGRSgdYVNbFEuiMZ59I2u8-e0HThfhgrLWZTsjjE_JWCEVt4Nz_IfGeYvam-rpaDE5bBjRmokyO2i9tnKen1NI3lsxBkOcQOhQfvz5O2tnMQhU2SIh-x_FsAnajtrxnsLFW0ZXZsFCu1hLAy-PRrFRZ1_yo5pYEkl0ZZIrDXgd1F3AtdaUU4M0eVBYsNanlariNgHXCIOC0FAlXjcGq7NMXPKUFBKyjJd28jZIQUUKIohtdSfhaL8sZAASlEQ0hL-Mtwq8");'></div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white text-sm">Jane Smith</h4>
+<div class="flex text-[#f59e0b] text-xs">
+<span class="material-symbols-outlined fill text-[14px]">star</span>
+<span class="material-symbols-outlined fill text-[14px]">star</span>
+<span class="material-symbols-outlined fill text-[14px]">star</span>
+<span class="material-symbols-outlined fill text-[14px]">star</span>
+<span class="material-symbols-outlined fill text-[14px]">star</span>
+</div>
+</div>
+<span class="ml-auto text-xs text-slate-400">1 month ago</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-300">
+                                Excellent content structure. The regression part was a bit fast paced but the classification section was top notch. Highly recommended for beginners.
+                            </p>
+</div>
+</div>
+<button class="mt-6 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white font-medium px-4 py-2 rounded hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors w-full md:w-auto">
+                        Show all reviews
+                    </button>
+</div>
+</div>
+<!-- Right Column: Sticky Sidebar -->
+<div class="lg:col-span-4 relative">
+<div class="sticky top-24 bg-white dark:bg-slate-800 shadow-xl dark:shadow-2xl dark:shadow-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
+<!-- Video Preview -->
+<div class="relative group cursor-pointer aspect-video w-full overflow-hidden bg-black">
+<div class="absolute inset-0 bg-cover bg-center opacity-80 group-hover:opacity-60 transition-opacity" data-alt="Abstract colorful code visualization gradient" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmkyVpj4CQUwqsLhEY-9-C8SIPvAblk1nGvPKIn7aGMBW0hmsrgGH-qqBG_6RxHf5Hc4WoA0xi3QnIiWL0DqI-AVCqr-_T1vmrl4ETZBc1hblOeZ08tWKehWqLOqb7OtMUXECzLaesHPEA6xA2ID_6D1KmTjnghrEve9rGSb_7T3Hvz7ItZIwEMaDLl_7K_ARa6Xw5zqoWyEKAYwsaAyoIZSK0P2PTHU55dzX6pPnJo3MxtisDmMOcMiyYnIpzMEnsIjkVTkHP_1w");'></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-white/20 backdrop-blur-md rounded-full p-4 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-white text-5xl fill">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-0 right-0 text-center">
+<span class="text-white font-bold shadow-black drop-shadow-md">Preview this course</span>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-6">
+<div class="flex items-end gap-3 mb-4">
+<span class="text-3xl font-bold text-slate-900 dark:text-white">$19.99</span>
+<span class="text-lg text-slate-400 line-through mb-1">$94.99</span>
+<span class="text-sm font-medium text-primary mb-1 ml-auto">80% off</span>
+</div>
+<div class="flex items-center gap-2 text-[#b91c1c] mb-6">
+<span class="material-symbols-outlined text-lg">alarm</span>
+<span class="text-sm font-bold">1 day left at this price!</span>
+</div>
+<div class="flex flex-col gap-3 mb-6">
+<button class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg shadow-lg shadow-blue-500/30 transition-all active:scale-[0.98]">
+                                Add to Cart
+                            </button>
+<button class="w-full bg-white dark:bg-transparent border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-700 font-bold py-3 px-4 rounded-lg transition-colors">
+                                Buy Now
+                            </button>
+</div>
+<div class="text-center text-xs text-slate-500 mb-6">
+                            30-Day Money-Back Guarantee
+                        </div>
+<div class="border-t border-slate-200 dark:border-slate-700 pt-6">
+<h4 class="font-bold text-slate-900 dark:text-white mb-4 text-sm">This course includes:</h4>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-lg">ondemand_video</span>
+<span>12.5 hours on-demand video</span>
+</li>
+<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-lg">description</span>
+<span>45 articles</span>
+</li>
+<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-lg">download</span>
+<span>12 downloadable resources</span>
+</li>
+<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-lg">all_inclusive</span>
+<span>Full lifetime access</span>
+</li>
+<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-lg">smartphone</span>
+<span>Access on mobile and TV</span>
+</li>
+<li class="flex items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined text-lg">emoji_events</span>
+<span>Certificate of completion</span>
+</li>
+</ul>
+</div>
+<div class="flex justify-between mt-6 pt-4 border-t border-slate-200 dark:border-slate-700">
+<button class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary underline">Share</button>
+<button class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary underline">Gift this course</button>
+<button class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary underline">Apply Coupon</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Simple -->
+<footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0d121b] py-10">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<span class="material-symbols-outlined !text-3xl fill">school</span>
+</div>
+<span class="font-bold text-slate-900 dark:text-white">CoursePlatform</span>
+</div>
+<div class="text-sm text-slate-500">
+                © 2023 CoursePlatform, Inc.
+            </div>
+</div>
+</footer>
+</body></html>
