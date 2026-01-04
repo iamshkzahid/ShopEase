@@ -1,4 +1,5 @@
 # 🛒 ShopEase — Modern E-Commerce Frontend (HTML + Tailwind CSS)
+Live Preview : https://iamshkzahid.github.io/ShopEase/
 
 ShopEase is a **modern, responsive, multi-page e-commerce frontend project** built using **HTML5** and **Tailwind CSS**.
 The project simulates a real-world online shopping platform with product listings, detailed product pages, category navigation, and an online course section — all designed with clean UI/UX principles and dark-mode support.
